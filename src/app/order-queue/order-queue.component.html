@@ -1,0 +1,16 @@
+<div class="order-queue">
+    <h1>Bartender Order Queue</h1>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let order of allOrders">
+        <h4>{{ order.drinkName }} - {{ order.customerName }}</h4>
+        <p>Status: {{ order.status }}</p>
+        <!-- <p>Ingredients: {{ order.ingredients.join(', ') }}</p> -->
+        <p>Order Time: {{ order.orderTime }}</p>
+        <!-- Button to set order as ready for pickup -->
+        <button class="btn btn-success" (click)="setOrderReady(order.id)" [disabled]="order.status === 'Ready for Pickup'">
+          Set Ready for Pickup
+        </button>
+      </li>
+      <button class="btn btn-primary" style="margin-top: 10px; margin-left:7px" routerLink="/menu/home">Back to Menu</button>
+    </ul>
+  </div>  

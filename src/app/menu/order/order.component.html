@@ -1,0 +1,22 @@
+<div class="container">
+<legend>Order Drink</legend>
+<form>
+    <div class="mb-3">
+        <label for="orderName" class="form-label">Name:</label>
+        <input type="text" name="name" class="form-control" id="orderName" [(ngModel)]="formdata.customerName"/>
+    </div>
+    <div class="mb-3">
+        <label for="drinks" class="form-label">Pick your preferred drink(s):</label>
+        <select name="drinksOrdered" id="drinks" required multiple class="form-control"[(ngModel)]="formdata.drinkName">
+              <option *ngFor="let drinks of allDrinks">{{ drinks.drink }}</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="qty" class="form-label">Quantity:</label>
+        <input type="number" name="orderQty" class="form-control" id="qty" [(ngModel)]="formdata.quantity" />
+    </div>
+
+    <button type="button" class="btn btn-primary custom-margin-top custom-margin-bottom" routerLink="/menu/home">Go Back</button>
+    <button type="button" class="btn btn-primary custom-margin-top custom-margin-bottom" (click)="placeOrder()">Order</button>
+</form>
+</div>

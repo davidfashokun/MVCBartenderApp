@@ -1,0 +1,117 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "drink": "Espresso Martini",
+      "price": 15,
+      "ingredients": [
+        "Vodka",
+        "Coffee Liqueur",
+        "Espresso",
+        "Coffee Bean"
+      ]
+    },
+    {
+      "id": 2,
+      "drink": "Lemon Drop",
+      "price": 14,
+      "ingredients": [
+        "Vodka",
+        "Triple Sec",
+        "Lemon Juice",
+        "Sugar"
+      ]
+    },
+    {
+      "id": 3,
+      "drink": "Negroni",
+      "price": 15,
+      "ingredients": [
+        "Gin",
+        "Campari",
+        "Sweet vermouth",
+        "Orange Wheel"
+      ]
+    },
+    {
+      "id": 4,
+      "drink": "Sex on the Beach",
+      "price": 11,
+      "ingredients": [
+        "Vodka",
+        "Peach Schnapps",
+        "Cranberry Juice",
+        "Orange Juice"
+      ]
+    },
+    {
+      "id": 5,
+      "drink": "Bloody Mary",
+      "price": 16,
+      "ingredients": [
+        "Vodka",
+        "Tomato Juice",
+        "Lime & Lemon wedge",
+        "Tabasco and Worcestershire sauce",
+        "Black pepper & Paprika"
+      ]
+    },
+    {
+      "id": 6,
+      "drink": "Margarita",
+      "price": 13,
+      "ingredients": [
+        "Tequila",
+        "Orange liqueur",
+        "Lime juice",
+        "Agave syrup",
+        "Kosher salt"
+      ]
+    },
+    {
+      "id": 7,
+      "drink": "Tequila Sunrise",
+      "price": 12,
+      "ingredients": [
+        "Blanco Tequila",
+        "Orange juice",
+        "Grenadine",
+        "Orange slice",
+        "Cherry"
+      ]
+    },
+    {
+      "id": 8,
+      "drink": "Snap, Crackle, Drop",
+      "price": 5,
+      "ingredients": [
+        "Don Julio Reposado Tequila",
+        "Angostura bitters",
+        "Black pepper",
+        "Lime wedge"
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "customerName": "dee",
+      "drinkName": [
+        "Negroni"
+      ],
+      "status": "Pending",
+      "orderTime": "15:21:23",
+      "quantity": 0
+    },
+    {
+      "id": "2",
+      "customerName": "Fash",
+      "drinkName": [
+        "Espresso Martini"
+      ],
+      "status": "Pending",
+      "orderTime": "15:22:11",
+      "quantity": 1
+    }
+  ]
+}

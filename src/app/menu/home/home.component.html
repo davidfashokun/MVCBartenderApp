@@ -1,0 +1,10 @@
+<div class="menu">
+    <h1>Menu</h1>
+    <ul>
+        <li *ngFor="let drinks of allDrinks">
+            <h2>{{ drinks.drink }}</h2>
+            <p>Price: ${{ drinks.price.toFixed(2) }}</p>
+            <p>Ingredients: <em>{{ drinks.ingredients.join(', ') }}</em></p>
+        </li>
+    </ul>
+</div>
